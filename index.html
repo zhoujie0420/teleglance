@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TeleGlance — Even G2 Telegram VIP Inbox & 1-Tap AI Reply</title>
+  </head>
+  <body>
+    <div id="app">
+      <header class="topbar">
+        <div>
+          <h1>TeleGlance <span class="badge">Even G2 · Telegram Read+Write</span></h1>
+          <p class="subtitle">VIP Telegram Chats, 30-Second Channel Digests &amp; 1-Tap R1 Ring AI Reply Drafter</p>
+        </div>
+        <div id="mode-pill" class="pill">Connecting…</div>
+      </header>
+
+      <main class="stage">
+        <section class="glasses-shell">
+          <div class="glasses-label">EVEN G2 MONOCHROME GREEN DISPLAY (576 × 288 px)</div>
+          <div id="g2-screen" class="g2-screen"></div>
+          <div class="ring-controls">
+            <button id="btn-up" class="ring-btn">▲ Ring Up (↑)</button>
+            <button id="btn-down" class="ring-btn">▼ Ring Down (↓)</button>
+            <button id="btn-tap" class="ring-btn primary">● Tap / Send (Enter)</button>
+            <button id="btn-digest" class="ring-btn">≡ Digest (D)</button>
+            <button id="btn-unread" class="ring-btn">● Unread Only (U)</button>
+            <button id="btn-sync" class="ring-btn">↻ Sync (R)</button>
+          </div>
+        </section>
+
+        <aside class="ledger-panel">
+          <h2>Telegram Delivery Log</h2>
+          <div id="summary-grid" class="summary-grid"></div>
+          <h3>Sent Replies (1-Tap Confirmed)</h3>
+          <div id="sent-list" class="log-list"></div>
+          <h3>Channel Digest Feed</h3>
+          <div id="digest-list" class="log-list"></div>
+        </aside>
+      </main>
+    </div>
+    <script type="module" src="/src/main.ts"></script>
+  </body>
+</html>
